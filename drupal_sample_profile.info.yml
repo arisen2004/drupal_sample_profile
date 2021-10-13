@@ -2,6 +2,7 @@ name: Drupal Sample Profile
 type: profile
 description: Sample for profile creation in Drupal8.
 core: 8.x
+core_version_requirement: ^8 || ^9
 
 distribution:
   name: Sample Distribution.

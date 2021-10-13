@@ -30,4 +30,3 @@ jobs:
 
       - name: Analyse codebase
         run: ./vendor/bin/phpstan analyse .
-      
