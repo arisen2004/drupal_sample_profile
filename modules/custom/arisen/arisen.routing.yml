@@ -1,0 +1,7 @@
+arisen.hello:
+  path:'arisen/hello'
+  defaults:
+    _controller:'\Drupal\arisen\Controller\HelloWorldController:hello'
+    _title:'Hello'
+  requirements:
+    _permission: 'access content'

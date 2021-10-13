@@ -1,0 +1,7 @@
+name: Arisen Module
+description: dummy custom module
+type: module
+pacakage: Custom
+
+core: 8.x
+core_version_requirement: ^8 || ^9
