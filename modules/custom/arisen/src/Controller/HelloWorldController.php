@@ -2,11 +2,18 @@
 
 namespace Drupal\arisen\Controller;
 
+/**
+ * Hello World Controller.
+ */
 class HelloWorldController {
 
-    public function hello() {
-        return [
-            '#markup' => 'Hello world, custom page'
-        ];
-    }
+  /**
+   * Function for rendering hello page.
+   */
+  public function hello() {
+    return [
+      '#markup' => 'Hello world, custom page',
+    ];
+  }
+
 }
