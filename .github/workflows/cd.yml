@@ -1,0 +1,23 @@
+name: CD
+on:
+  push:
+    branches:
+      master
+
+jobs:
+  deploy:
+    name: Test Job
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+
+    - name: Configure AWS credentials from Test account
+      uses: aws-actions/configure-aws-credentials@v1
+      with:
+        role-to-assume: arn:aws:iam::097620825565:instance-profile/AmazonEC2RoleforSSM
+        aws-region: ap-south-1a
+
+    - name: Trigger commands
+      run: |
+        ls -all
